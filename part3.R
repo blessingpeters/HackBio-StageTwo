@@ -329,7 +329,7 @@ grob_2f <- rasterGrob(readPNG("panel_2f.png"), interpolate = TRUE)
 grob_2g <- rasterGrob(readPNG("panel_2g.png"), interpolate = TRUE)
 
 # Assemble into final figure
-pdf("Figure_2_final.pdf", width = 12, height = 16)
+png("Figure_2_final.png", width = 800, height = 1000, res = 100,dpi = 100)
 grid.arrange(
   grob_2a, grob_2b,
   grob_2c, grob_2d,
